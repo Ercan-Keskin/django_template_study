@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{%load static%}
+
+{% block title %}
+
+<title>Login</title>
+
+{% endblock title %}
+
+
+{%block link%}
+<link rel="stylesheet" type="text/css" href="{% static 'student' main.css%}">
+{%endblock link%}
+
+{% block body %}
+
+{% if number == 123 %}
+<p>Ercan</p>
+{%else%}
+<p>Aplarslan</p>
+{%endif%}
+
+<hr>
+
+<p>{{number | add:'2'}}</p>
+<p>{{title | capfirst}}</p>
+
+{% endblock body %}

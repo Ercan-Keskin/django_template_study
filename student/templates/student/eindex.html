@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1> Hello Dünya </h1>
+    <p> {{ title }} </p>
+    <p> {{ number }} </p>
+    <p> {{ list1.0 }} </p>
+    <p> {{ list1.2.0 }} </p>
+    <p> {{ dict1.}} </p>
+    <p> {{ dict1.a}} </p>
+
+<hr>
+
+<ul>
+ {% for i in list1  %}
+ <li> {{i}}
+ {% endfor %}
+</ul>
+<hr>
+
+{% if number == 123 %}
+<p>Ercan</p>
+{%else%}
+<p>Aplarslan</p>
+{%endif%}
+
+<hr>
+
+<p>{{number | add:'2'}}</p>
+<p>{{title | capfirst}}</p>
+
+
+</body>
+</html>
